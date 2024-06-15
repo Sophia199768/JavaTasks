@@ -15,6 +15,7 @@ public class Controller {
         return ZonedDateTime.now(ZoneId.of("Europe/Moscow")).format(DateTimeFormatter.ofPattern("HH:mm:ss z"));
     }
 
+
     @GetMapping("/washington")
     public String GetWashingtonTime() {
         return ZonedDateTime.now(ZoneId.of("America/New_York")).format(DateTimeFormatter.ofPattern("HH:mm:ss z"));
